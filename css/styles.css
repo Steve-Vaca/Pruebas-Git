@@ -205,22 +205,22 @@ main{
     width: 50%;
     height:25%;
 }
-.item__date{
+.item__date{    
     grid-area: fecha;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:var(--soft-orange);
-    margin: 1.5em 1em;
+    margin: 1.3em;
     border-radius: 5px;
-    width: 176px;
-    height: 30px;
+    width: 168px;
+    height: 32px;
     font-family: "Inter",sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.9rem;
     color: var(--warm-black);
-
+    padding: 0.1em 0.2em;
 }
 .item__date span{
     line-height: 1.4rem;
@@ -299,14 +299,14 @@ main{
     background-color:var(--soft-blue);
     margin: 1.3em;
     border-radius: 5px;
-    width: 173px;
-    height: 31px;
+    width: 168px;
+    height: 32px;
     font-family: "Inter",sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.9rem;
     color: var(--warm-black);
-
+    padding: 0.1em 0.2em;
 }
 .item__date--2 span{
     line-height: 1.4rem;
