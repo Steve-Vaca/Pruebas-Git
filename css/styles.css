@@ -145,7 +145,7 @@ main{
                         "fecha fecha" ;
     margin-left:calc(50% - 99px);;
 }
-.item.title{
+.item__title{
     align-self: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -153,7 +153,7 @@ main{
     color: #FF9536;
    
 }
-.item.content{
+.item__content{
     grid-area: contenido;
     display: grid;
     grid-template: repeat(4,1fr) / 100px 100px;
@@ -161,21 +161,21 @@ main{
     overflow: hidden;
     gap: 2px;
 }
-.item.content .subitem{
+.item__content .subitem__text,.subitem__value{
     display: flex;
     justify-content: start;
     align-items: center;
     padding-left: 12px;
     background-color: var(--just-white);
 }
-.item.content .text{
+.item__content .subitem__text{
     font-family: "inter",sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.9rem;
     color: #B5B0AC;
 }
-.item.content .value{
+.item__content .subitem__value{
     font-family: "Inter",sans-serif;
     font-weight: normal;
     font-size: 14px;
@@ -185,10 +185,10 @@ main{
     background-repeat: no-repeat;
     background-position: 80%;
 }
-.item.content .value:nth-of-type(4){
+.item__content .subitem__value:nth-of-type(4){
     background-image: url("../assets/icons/trending-up.svg");
 }
-.item.button{
+.item__button{
     grid-area: boton;
     display: flex;
     justify-content: center;
@@ -198,12 +198,12 @@ main{
     background-position: 50% 50%;
     color:  #B5B0AC;
 }
-.item.button a{
+.item__button a{
     display: block;
     width: 50%;
     height:25%;
 }
-.item.date{
+.item__date{
     grid-area: fecha;
     display: flex;
     align-items: center;
@@ -221,7 +221,7 @@ main{
     color: var(--warm-black);
 
 }
-.item.date span{
+.item__date span{
     line-height: 1.4rem;
     font-weight: 500;
 }
