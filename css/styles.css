@@ -313,7 +313,7 @@ main{
 
 .main__product-detail{
     position: relative;
-    width: 100%;
+    
     min-width: 320px;
     height: auto;
     padding: 2em 1em;
@@ -325,7 +325,7 @@ main{
     width: 40px;
     height: 25px;
     top: -10px;
-    left: calc(50% - 30px);
+    left: calc(50% - 20px);
     background-image: url("../assets/icons/batata.svg");
 }
 
@@ -354,7 +354,7 @@ main{
 }
 
 .product-detail__card{
-    width: 100%;
+    
     min-width: 288px;
     max-width: 400px;
     height: 150px;
