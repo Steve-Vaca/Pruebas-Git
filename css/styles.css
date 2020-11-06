@@ -31,7 +31,7 @@ header{
 header img{
     width: 150px;
     height: 24px;
-    margin-top: 60px;
+    margin-top: 6em;
     align-self: center;
 }
 
@@ -40,7 +40,7 @@ header img{
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 40px;
+    margin-top: 1.8em;
     text-align: center;
     align-self: center;
 }
@@ -53,7 +53,7 @@ header img{
 }
 
 .header__title-container p{
-    margin-top: 25px;
+    margin-top: 1.8em;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -65,9 +65,9 @@ header img{
     left: calc(50% - 118px);
     top: 270px;
     display: block;
-    margin-top: 35px;
-    padding: 15px;
-    width: 229px;
+    margin-top: 2.8em;
+    padding: 1em;
+    width: 220px;
     height: 20px;
     background-color: var(--off-white);
     /*Sombra*/
@@ -84,7 +84,7 @@ header img{
     display: inline-block;
     width: 13px;
     height: 8px;
-    margin-left: 10px;
+    margin-left: 1.2em;
     background-image: url('../assets/icons/down-arrow.svg');
 }
 
@@ -113,7 +113,7 @@ main{
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 5em;
     background: url(../assets/img/Bitcoin.svg) center/cover no-repeat;
     /*background-size: cover;
     background-position: center;
@@ -121,7 +121,7 @@ main{
 }
 
 .main__exchange-container h2{
-    margin-bottom: 30px;
+    margin-bottom: 1.2em;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -129,7 +129,7 @@ main{
 }
 
 .main__exchange-container p{
-    margin-bottom: 30px;
+    margin-bottom: 1.2em;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -139,11 +139,12 @@ main{
 /*GRID TABLE*/
 .main__table-container{
     display: grid;
-    grid-template: 34px 162px 60px/200px 40px;
+    grid-template: 34px 162px 60px/200px 50px;
     grid-template-areas:"titulo titulo"
                         "contenido boton"
                         "fecha fecha" ;
-    margin-left:calc(50% - 99px);;
+    margin-left:calc(50% - 100px);
+    margin-bottom: 2em;
 }
 .item__title{
     align-self: center;
@@ -151,6 +152,7 @@ main{
     font-weight: bold;
     line-height: 2.3rem;
     color: #FF9536;
+    margin-bottom: 1em;
    
 }
 .item__content{
@@ -165,7 +167,7 @@ main{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 12px;
+    padding-left: 0.9em;
     background-color: var(--just-white);
 }
 .item__content .subitem__text{
@@ -209,8 +211,93 @@ main{
     align-items: center;
     justify-content: center;
     background-color:var(--soft-orange);
-    margin-top: 15px;
-    margin-left: 15px;
+    margin: 1.5em 1em;
+    border-radius: 5px;
+    width: 176px;
+    height: 30px;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--warm-black);
+
+}
+.item__date span{
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+/*tabla comisiones*/
+.main__table-container--2{
+    display: grid;
+    grid-template: 34px 162px 60px/200px 50px;
+    grid-template-areas:"titulo titulo"
+                        "contenido boton"
+                        "fecha fecha" ;
+    margin-left:calc(50% - 100px);
+    margin-bottom: 2em;
+}
+.item__title--2{
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+    margin-bottom: 1em;
+   
+}
+.item__content--2{
+    grid-area: contenido;
+    display: grid;
+    grid-template: repeat(4,1fr) / 100px 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 2px;
+}
+.item__content--2 .subitem__text--2,.subitem__value--2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1em;
+    background-color: var(--just-white);
+}
+.item__content--2 .subitem__text--2{
+    font-family: "inter",sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+}
+.item__content--2 .subitem__value--2{
+    font-family: "Inter",sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+    padding-left: 1.6em;
+}
+
+.item__button--2{
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/icons/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color:  #B5B0AC;
+}
+.item__button--2 a{
+    display: block;
+    width: 50%;
+    height:25%;
+}
+.item__date--2{
+    grid-area: fecha;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--soft-blue);
+    margin: 1.3em;
     border-radius: 5px;
     width: 173px;
     height: 31px;
@@ -221,7 +308,7 @@ main{
     color: var(--warm-black);
 
 }
-.item__date span{
+.item__date--2 span{
     line-height: 1.4rem;
     font-weight: 500;
 }
