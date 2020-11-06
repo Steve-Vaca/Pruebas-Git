@@ -135,3 +135,93 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+
+/*GRID TABLE*/
+.main-table-container{
+    display: grid;
+    grid-template: 34px 162px 60px/200px 40px;
+    grid-template-areas:"titulo titulo"
+                        "contenido boton"
+                        "fecha fecha" ;
+    margin-left:calc(50% - 99px);;
+}
+.item.title{
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: #FF9536;
+   
+}
+.item.content{
+    grid-area: contenido;
+    display: grid;
+    grid-template: repeat(4,1fr) / 100px 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 2px;
+}
+.item.content .subitem{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+    background-color: var(--just-white);
+}
+.item.content .text{
+    font-family: "inter",sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+}
+.item.content .value{
+    font-family: "Inter",sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+    background-image: url("../assets/icons/trending-down.svg");
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+.item.content .value:nth-of-type(4){
+    background-image: url("../assets/icons/trending-up.svg");
+}
+.item.button{
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/icons/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color:  #B5B0AC;
+}
+.item.button a{
+    display: block;
+    width: 50%;
+    height:25%;
+}
+.item.date{
+    grid-area: fecha;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--soft-orange);
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 173px;
+    height: 31px;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--warm-black);
+
+}
+.item.date span{
+    line-height: 1.4rem;
+    font-weight: 500;
+}
