@@ -94,7 +94,7 @@ main{
     background-color: var(--off-white);
 }
 
-.main-exchange-container{
+.main__exchange-container{
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -102,14 +102,14 @@ main{
     text-align: center;
 }
 
-.main-exchange-container__title{
+.main__exchange-container--title{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.main-exchange-container .backgroundImg{
+.main__exchange-container .backgroundImg{
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -120,7 +120,7 @@ main{
     background-repeat: no-repeat;*/
 }
 
-.main-exchange-container h2{
+.main__exchange-container h2{
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -128,7 +128,7 @@ main{
     color: var(--black);
 }
 
-.main-exchange-container p{
+.main__exchange-container p{
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -137,7 +137,7 @@ main{
 }
 
 /*GRID TABLE*/
-.main-table-container{
+.main__table-container{
     display: grid;
     grid-template: 34px 162px 60px/200px 40px;
     grid-template-areas:"titulo titulo"
