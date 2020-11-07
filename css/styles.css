@@ -158,6 +158,7 @@ main{
                         "fecha fecha" ;
     margin-left:calc(50% - 100px);
     margin-bottom: 2em;
+    scroll-snap-align: center;
 }
 .item__title{
     align-self: center;
@@ -203,7 +204,7 @@ main{
 .item__content .subitem__value:nth-of-type(4){
     background-image: url("../assets/icons/trending-up.svg");
 }
-.item__button{
+/* .item__button{
     grid-area: boton;
     display: flex;
     justify-content: center;
@@ -217,7 +218,7 @@ main{
     display: block;
     width: 50%;
     height:25%;
-}
+} */
 .item__date{    
     grid-area: fecha;
     display: flex;
@@ -540,4 +541,33 @@ main{
     vertical-align: text-bottom;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: 1em 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
 
