@@ -10,6 +10,12 @@
 --off-white: #faf8f7;
 --just-white: #fff;
 }
+/* html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } */
 
 html{
     font-size: 62.5%;
@@ -92,6 +98,7 @@ main{
     width: 100%;
     height: auto;
     background-color: var(--off-white);
+    min-width: 320px;
 }
 
 .main__exchange-container{
@@ -313,8 +320,7 @@ main{
 
 .main__product-detail{
     position: relative;
-    
-    min-width: 320px;
+    min-width: 300px;
     height: auto;
     padding: 2em 1em;
     background-color: var(--warm-black);
@@ -354,8 +360,7 @@ main{
 }
 
 .product-detail__card{
-    
-    min-width: 288px;
+    min-width: 270px;
     max-width: 400px;
     height: 150px;
     margin: 1.5em auto;
@@ -401,4 +406,5 @@ main{
     line-height: 1.8rem;
     color: #808080;
 }
+
 
