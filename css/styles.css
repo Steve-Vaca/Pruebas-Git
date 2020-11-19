@@ -170,13 +170,13 @@ main{
 /*GRID TABLE*/
 .main__container--table{
     display: grid;
-    grid-template: 34px 162px 60px/200px 50px;
-    grid-template-areas:"titulo titulo"
-                        "contenido boton"
-                        "fecha fecha" ;
+    grid-template: 34px 162px 60px/200px;
+    grid-template-areas:
+        "titulo"
+        "contenido"
+        "fecha";;
     margin-left:calc(50% - 100px);
     margin-bottom: 2em;
-    scroll-snap-align: center;
 }
 .item__title{
     align-self: center;
@@ -385,8 +385,8 @@ main{
 }
 
 .product-detail__card{
-    min-width: 270px;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 480px;
     height: 150px;
     margin: 1.5em auto;
     padding: 1.5em;
@@ -493,7 +493,7 @@ main{
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 5em 1.5em 0;
+    margin: 4em 1em;
     padding: 0 1.5em;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -590,3 +590,44 @@ footer .left ul{
     color: var(--just-white);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1119px){
+    .main__container--tables{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .main__container--table{
+        margin:4em;
+    }
+    .product-detail__card{
+        min-width: 720px;
+        max-width: 1024px;
+    }
+    .plans__container--slider{
+        display: flex;
+        height: 316px;
+        overflow-x: unset; 
+        overscroll-behavior-x: none;
+ 
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px){
+    .main__container--tables{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .main__container--table{
+        margin:4em;
+    }
+    .product-detail__card{
+        min-width: 720px;
+        max-width: 1024px;
+    }
+    .plans__container--slider{
+        display: flex;
+        justify-content: center;
+        height: 316px;
+        overflow-x: unset; 
+        overscroll-behavior-x: none;
+ 
+    }
+  }
